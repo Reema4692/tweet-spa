@@ -1,0 +1,13 @@
+<div class="form-group">
+  <div class="input-group input-inline">
+    <input class="form-input" type="text" placeholder="Username" #username>
+    <button class="btn btn-primary input-group-btn" (click)="onSubmit(username.value)">Submit</button>
+  </div>
+</div>
+<div class="divider"></div>
+<div *ngIf="userInfo">
+  <user-details [userInfo]="userInfo"></user-details>
+</div>
+<div *ngIf="notFound">
+  Username is not found.
+</div>

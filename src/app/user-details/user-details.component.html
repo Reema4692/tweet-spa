@@ -1,0 +1,19 @@
+<section  *ngIf="userInfo" class="tweetList">
+    <header class="my-2">
+        <h5>{{userInfo.user.name}} Tweets</h5>
+    </header>
+    <div *ngFor="let tweet of userInfo.user.tweets | slice:0:10">
+        <div class="panel tweet">
+            <div class="leftSection">
+                <div class="tag" [ngStyle]="{'background-image': 'url(' + userInfo.user.profile_image_url + ')'}"></div>
+            </div>
+            <div class="rightSection">
+                <div>
+                    <span>{{userInfo.user.name}}</span>
+                    <span>{{tweet.createAt}}</span>
+                </div>
+                <div>{{tweet.description}}</div>
+            </div>
+        </div>
+    </div>
+</section>

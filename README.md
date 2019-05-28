@@ -1,27 +1,20 @@
-# TwitterSpa
+#Twitter SPA
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+After the clone, go the path twitter-spa/ and run npm install.
 
-## Development server
+Apollo graphQL seem to have some issues so couldn't continue with the same.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+So instead I have used http-server, by npm install http-server -g.
 
-## Code scaffolding
+Once done, Open in visual studio(or any other ide). Open IDE terminal and run this command json-server --watch db.json. http://localhost:3000 will have the json I have created and that is what I am using.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Open CMD and go to the path where the project is created and run ng serve -o.
 
-## Build
+Login Page appears, enter <test@test.com> / <Test@123> and click on submit. Redirects to home.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+On home page, enter "karmasakshi" to get correct details.
 
-## Running unit tests
+You can also type any random value in the adress bar and it should take you to 404 page.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Thank You.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

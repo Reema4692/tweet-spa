@@ -23,9 +23,13 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/spectre.css/dist/spectre.min.css",
+              "node_modules/spectre.css/dist/spectre-icons.min.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/auth0-js/build/auth0.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
