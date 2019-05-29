@@ -4,7 +4,7 @@ After the clone, go the path twitter-spa/ and run npm install.
 
 Apollo graphQL seem to have some issues so couldn't continue with the same.
 
-So instead I have used http-server, by npm install http-server -g.
+So instead I have used http-server, by npm install http-server json-server -g.
 
 Once done, Open in visual studio(or any other ide). Open IDE terminal and run this command json-server --watch db.json. http://localhost:3000 will have the json I have created and that is what I am using.
 
